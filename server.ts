@@ -8,6 +8,7 @@ export default (req: NowRequest, res: NowResponse) => {
     // 返回响应
     res.json({ message: '请求已接收' });
   } else {
+    console.log(req.url)
     res.status(404).json({ error: '未找到该路由' });
   }
 };
