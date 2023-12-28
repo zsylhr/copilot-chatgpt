@@ -118,6 +118,7 @@ async function FakeRequest(content: JsonData, copilotToken) {
 }
 
 export default (req: NowRequest, res: NowResponse) => {
+    console.log(req)
     const authHeader = req.headers.Authorization;
 
     if (authHeader) {
